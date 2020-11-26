@@ -24,18 +24,17 @@
   $contact->subject = $_POST['subject'];
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
   $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
+    'host' => 'smtp.gmail.com',
+    'username' => 'rakib4testing@gmail.com',
+    'password' => 'testing@pass',
+    'port' => '465'
   );
-  */
 
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
+  $contact->recaptcha_secret_key = 'Your_reCAPTCHA_secret_key';
 
   echo $contact->send();
 ?>
