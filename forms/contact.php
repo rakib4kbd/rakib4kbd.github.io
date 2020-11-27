@@ -28,7 +28,7 @@
     'host' => 'smtp.gmail.com',
     'username' => 'rakib4testing@gmail.com',
     'password' => 'testing@pass',
-    'port' => '465'
+    'port' => '587'
     'tls' => 'yes'
   );
 
