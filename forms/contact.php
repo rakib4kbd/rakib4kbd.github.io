@@ -29,7 +29,7 @@
     'username' => 'rakib4testing@gmail.com',
     'password' => 'testing@pass',
     'port' => '587'
-    'tls' => 'yes'
+    'tls' => 'true'
   );
 
   $contact->add_message( $_POST['name'], 'From');
