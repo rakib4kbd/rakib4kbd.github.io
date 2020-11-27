@@ -25,11 +25,10 @@
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   $contact->smtp = array(
-    'host' => 'smtp.gmail.com',
-    'username' => 'rakib4testing@gmail.com',
-    'password' => 'testing@pass',
+    'host' => 'smtp.sendgrid.net',
+    'username' => 'apikey',
+    'password' => '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',
     'port' => '587'
-    'tls' => 'true'
   );
 
   $contact->add_message( $_POST['name'], 'From');
