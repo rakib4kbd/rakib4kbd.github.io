@@ -3,376 +3,270 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Md Rakib Khan - DevOps Engineer</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+    <title>Rakib Khan - Senior DevOps Engineer | Direct Contracts</title>
+    <meta
+      name="description"
+      content="Top Rated Plus DevOps Engineer • 100% Job Success • $10k+ earned • Now accepting direct contracts (no Upwork fees). AWS, Docker, Kubernetes, Terraform, Linux, CI/CD."
     />
     <style>
+      :root {
+        --green: #108a00;
+        --dark: #181818;
+        --light: #f8f8f8;
+      }
       body {
-        font-family: "Inter", sans-serif;
-        background-color: #24292e;
-        color: #24292e;
         margin: 0;
-        padding: 0;
-        line-height: 1.6;
+        font-family: system-ui, -apple-system, sans-serif;
+        background: #fff;
+        color: #222;
+        line-height: 1.65;
       }
-      .container {
-        max-width: 1000px;
-        margin: 40px auto;
-        padding: 30px;
-        background-color: #fafbfc;
-        border-radius: 6px;
-        box-shadow: 0 1px 3px rgba(27, 31, 35, 0.12),
-          0 0 0 1px rgba(27, 31, 35, 0.15);
-      }
-      .header {
+      header {
+        background: var(--green);
+        color: #fff;
         text-align: center;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #e1e4e8;
+        padding: 110px 20px 90px;
       }
-      .header h1 {
-        font-size: 2.5em;
-        font-weight: 600;
-        color: #24292e;
+      h1 {
         margin: 0;
+        font-size: 2.9rem;
       }
-      .header p {
-        font-size: 1em;
-        color: #586069;
-        margin: 5px 0;
+      h2 {
+        color: var(--green);
+        border-bottom: 3px solid var(--green);
+        padding-bottom: 10px;
+        margin-top: 50px;
       }
-      .header a {
-        color: #0366d6;
-        text-decoration: none;
-        transition: color 0.3s ease;
+      section {
+        max-width: 960px;
+        margin: 0 auto 70px;
+        padding: 0 20px;
       }
-      .header a:hover {
-        color: #005cc5;
+      .badge {
+        background: #fff;
+        color: var(--green);
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        border: 1px solid var(--green);
+        display: inline-block;
+        margin: 6px;
       }
-      .profile-pic {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin: 20px auto;
-        display: block;
-        box-shadow: 0 2px 4px rgba(27, 31, 35, 0.15);
-      }
-      .section {
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
         margin: 30px 0;
       }
-      .section h2 {
-        font-size: 1.5em;
-        font-weight: 600;
-        color: #24292e;
-        margin-bottom: 15px;
-        border-bottom: 1px solid #e1e4e8;
-        padding-bottom: 5px;
+      .skill {
+        background: #f0f8f0;
+        padding: 10px 20px;
+        border-radius: 30px;
+        font-size: 0.95rem;
+        border: 1px solid #d0e8d0;
       }
-      .job {
-        margin-bottom: 25px;
-      }
-      .job h3 {
-        font-size: 1.2em;
-        font-weight: 600;
-        color: #24292e;
-        margin: 10px 0 5px;
-      }
-      .job p {
-        font-size: 0.9em;
-        color: #586069;
-        margin: 5px 0;
-      }
-      .job ul {
-        list-style-type: none;
-        padding-left: 0;
-      }
-      .job ul li {
-        margin: 8px 0;
-        padding-left: 20px;
-        position: relative;
-        font-size: 0.9em;
-        color: #24292e;
-      }
-      .job ul li::before {
-        content: "•";
-        color: #0366d6;
-        position: absolute;
-        left: 0;
-        font-size: 1em;
-      }
-      .skills-grid {
+      .testimonials {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 15px;
+        gap: 32px;
+        margin-top: 40px;
       }
-      .skills-grid div {
-        background-color: #f6f8fa;
-        padding: 15px;
-        border-radius: 6px;
-        border: 1px solid #e1e4e8;
+      .testimonial {
+        background: #fff;
+        border: 1px solid #eee;
+        padding: 28px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
       }
-      .skills-grid h3 {
-        font-size: 1em;
+      .testimonial p {
+        margin: 0 0 18px;
+        font-style: italic;
+        line-height: 1.7;
+      }
+      .client {
         font-weight: 600;
-        color: #24292e;
-        margin-top: 0;
+        color: var(--green);
       }
-      .certifications ul,
-      .projects ul {
-        list-style-type: none;
-        padding-left: 0;
+      .date {
+        font-size: 0.9rem;
+        color: #666;
       }
-      .certifications ul li,
-      .projects ul li {
-        margin: 8px 0;
-        padding-left: 20px;
-        position: relative;
-        font-size: 0.9em;
-        color: #24292e;
+      form {
+        max-width: 660px;
+        margin: 50px auto;
+        display: grid;
+        gap: 18px;
       }
-      .certifications ul li::before,
-      .projects ul li::before {
-        content: "•";
-        color: #0366d6;
-        position: absolute;
-        left: 0;
-        font-size: 1em;
+      input,
+      textarea {
+        padding: 16px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 1rem;
       }
-      .education p,
-      .references p {
-        font-size: 0.9em;
-        color: #586069;
-        margin: 10px 0;
+      button {
+        background: var(--green);
+        color: #fff;
+        padding: 18px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        font-weight: 600;
       }
-      @media (max-width: 768px) {
-        .container {
-          margin: 20px;
-          padding: 20px;
+      button:hover {
+        background: #0d7500;
+      }
+      footer {
+        background: var(--dark);
+        color: #fff;
+        text-align: center;
+        padding: 45px 20px;
+        font-size: 0.95rem;
+      }
+      @media (max-width: 640px) {
+        h1 {
+          font-size: 2.4rem;
         }
-        .header h1 {
-          font-size: 2em;
-        }
-        .section h2 {
-          font-size: 1.3em;
+        header {
+          padding: 90px 20px 70px;
         }
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
-        <!-- Uncomment the line below to add your profile picture -->
-        <!-- <img src="your-profile-picture.jpg" alt="Profile Picture" class="profile-pic"> -->
-        <h1>Md Rakib Khan</h1>
-        <p>DevOps Engineer</p>
-        <p>
-          Email: <a href="mailto:rakib4kbd@gmail.com">rakib4kbd@gmail.com</a>
-        </p>
-        <p>
-          LinkedIn:
-          <a href="https://www.linkedin.com/in/rakib4kbd/" target="_blank"
-            >linkedin.com/in/rakib4kbd</a
-          >
-        </p>
-        <p>
-          Upwork:
-          <a
-            href="https://www.upwork.com/freelancers/~01b87aafcf57285817"
-            target="_blank"
-            >upwork.com/freelancers/~01b87aafcf57285817</a
-          >
-        </p>
-      </div>
+    <header>
+      <h1>Rakib Khan</h1>
+      <p style="font-size: 1.6rem; margin: 15px 0">Senior DevOps Engineer</p>
+      <p>
+        Top Rated Plus • 100% Job Success • Immediate availability for direct
+        contracts
+      </p>
+    </header>
 
-      <div class="section">
-        <h2>Professional Summary</h2>
-        <p>
-          Highly skilled and results-oriented DevOps Engineer with over 5 years
-          of hands-on experience in Linux System Administration, Cloud
-          Management, and Automation. Specializing in Amazon Web Services (AWS),
-          containerization with Docker, orchestration with Kubernetes (k8s),
-          continuous integration/continuous deployment (CI/CD), and Linux
-          administration, I have a proven track record of optimizing
-          infrastructure, enhancing security, and improving system performance
-          through innovative automation and scripting. With a 100% job success
-          score on Upwork for 5+ long-term projects, I am committed to
-          delivering exceptional results and driving operational excellence.
-        </p>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm a full-time DevOps & Cloud engineer based in Dhaka, Bangladesh with
+        over 5 years of production experience. I specialize in AWS, Docker,
+        Kubernetes, Terraform, CI/CD, and Linux server administration.
+      </p>
+      <p>
+        I'm now accepting <strong>direct contracts only</strong> — you pay my
+        rate, no Upwork fees.
+      </p>
+      <div>
+        <span class="badge">Top Rated Plus</span>
+        <span class="badge">100% Job Success</span>
+        <span class="badge">5+ Years Experience</span>
+        <span class="badge">Fast Responder</span>
       </div>
+    </section>
 
-      <div class="section">
-        <h2>Work Experience</h2>
-        <div class="job">
-          <h3>DevOps Engineer</h3>
-          <p>MojoCreators (US-based Company) | 2022 - Present</p>
-          <ul>
-            <li>
-              Designed, deployed, and optimized AWS cloud infrastructure,
-              including EC2, EKS, Lambda, S3, RDS, Route53, Load Balancers,
-              CloudFront.
-            </li>
-            <li>
-              Automated CI/CD pipelines using Jenkins, GitHub Actions, AWS
-              CodePipeline, reducing deployment time by 40%.
-            </li>
-            <li>
-              Implemented monitoring & logging solutions using Prometheus,
-              Grafana, ELK, Graylog to enhance system observability.
-            </li>
-            <li>
-              Managed and secured 30+ SMTP and client email servers through
-              Ansible, Jenkins, GitHub, Ubuntu 20.04, Postfix, Dovecot,
-              OpenDKIM, CSF.
-            </li>
-          </ul>
+    <section>
+      <h2>Core Expertise</h2>
+      <div class="skills">
+        <span class="skill"
+          >AWS (EC2, ECS, EKS, RDS, S3, Lambda, VPC, CloudFront)</span
+        >
+        <span class="skill">Docker & Docker Compose</span>
+        <span class="skill">Kubernetes (EKS & self-managed)</span>
+        <span class="skill">Terraform & Ansible</span>
+        <span class="skill">CI/CD (GitHub Actions, GitLab CI, Jenkins)</span>
+        <span class="skill"
+          >Linux Administration (Ubuntu, CentOS, Amazon Linux)</span
+        >
+        <span class="skill">Bash & Python Scripting</span>
+        <span class="skill"
+          >Monitoring (Graylog, ELK, Prometheus, Grafana)</span
+        >
+        <span class="skill">Nginx / Apache / Caddy</span>
+        <span class="skill">MySQL, PostgreSQL, Redis</span>
+        <span class="skill">Security & Cost Optimization</span>
+        <span class="skill">cPanel, WordPress, Strapi, BigCommerce</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Real Client Feedback (100% from Upwork)</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>
+            “Rakib was very knowledgeable and was able to get started quickly.
+            We found a related solution that will end up working better than the
+            initial scope we had planned. We will keep Rakib in mind for future
+            projects!”
+          </p>
+          <div class="client">— Graylog configuration project</div>
+          <div class="date">July 2025 • 5.0 ★</div>
         </div>
-        <div class="job">
-          <h3>DevOps Engineer</h3>
-          <p>YafiTech | 2022 - 2025</p>
-          <ul>
-            <li>
-              Orchestrated containerized deployments with Docker & Kubernetes
-              (EKS, ECS, Helm) to improve scalability and reliability.
-            </li>
-            <li>
-              Migrated mission-critical applications to AWS, DigitalOcean, and
-              GCP, enhancing performance and cost-efficiency.
-            </li>
-            <li>
-              Developed and maintained infrastructure automation scripts using
-              Terraform & Ansible, reducing manual intervention by 50%.
-            </li>
-          </ul>
+
+        <div class="testimonial">
+          <p>
+            “It was a great experience working with Rakib. He understood the
+            job, found the problem and gave a solution to it, all this in a fast
+            way. I will definitely hire him again.”
+          </p>
+          <div class="client">— Google Cloud + cPanel domain recovery</div>
+          <div class="date">June 2022 • 5.0 ★</div>
         </div>
-        <div class="job">
-          <h3>Linux System Administrator</h3>
-          <p>YafiTech | 2019 - 2022</p>
-          <ul>
-            <li>
-              Administered and optimized Linux-based servers (Ubuntu, Debian,
-              CentOS, RockyLinux) for high-availability applications.
-            </li>
-            <li>
-              Configured, secured, and optimized web servers (Nginx, Apache,
-              HAProxy, OpenLiteSpeed) for increased performance.
-            </li>
-            <li>
-              Deployed and maintained enterprise-grade email servers (Postfix,
-              Exim, iRedMail, Dovecot, OpenDKIM), ensuring 99.9% uptime.
-            </li>
-          </ul>
+
+        <div class="testimonial">
+          <p>
+            “Rakib completed the work much quicker than planned and under
+            budget. Communication was superb and provided lightning quick
+            responses. Fantastic! Would love to work with him again.”
+          </p>
+          <div class="client">— Multiple Hummingbot installations on AWS</div>
+          <div class="date">Feb-May 2021 • 5.0 ★</div>
         </div>
-        <div class="job">
-          <h3>Freelance DevOps Engineer</h3>
-          <p>Upwork Marketplace | 100% Job Success Score</p>
-          <ul>
-            <li>
-              Delivered DevOps, Cloud, and Automation solutions to international
-              clients, ensuring secure, scalable, and efficient infrastructure.
-            </li>
-            <li>
-              Executed website, database, and cloud infrastructure migrations,
-              improving security, performance, and cost-effectiveness.
-            </li>
-          </ul>
+
+        <div class="testimonial">
+          <p>
+            “Rakib has shown excellent knowledge as a Linux server
+            administrator. Takes the time to understand the job and to get it
+            done. Helpful, responsive and skilled professional. I recommend this
+            freelancer.”
+          </p>
+          <div class="client">— Fix HTTPS on EC2/Ubuntu/Nginx</div>
+          <div class="date">Sep-Oct 2020 • 5.0 ★</div>
+        </div>
+
+        <div class="testimonial">
+          <p>
+            “Rakib is an incredible dedicated developer. Tasks are grasped
+            quickly and performed diligently. Will hire this skilled DevOps
+            Engineer again.”
+          </p>
+          <div class="client">— VueStorefront + ELK on AWS Elasticsearch</div>
+          <div class="date">Sep 2020 • 5.0 ★</div>
         </div>
       </div>
+    </section>
 
-      <div class="section">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div>
-            <h3>DevOps & Cloud Technologies</h3>
-            <p>
-              Cloud Platforms: AWS (EC2, S3, RDS, Lambda, Route53, Load
-              Balancers, CloudFront, API Gateway), DigitalOcean, GCP.
-            </p>
-            <p>
-              Infrastructure as Code (IaC): Terraform, Ansible, CloudFormation.
-            </p>
-            <p>
-              CI/CD & Automation: Jenkins, GitHub Actions, AWS CodePipeline,
-              Kubernetes, Docker.
-            </p>
-            <p>
-              Monitoring & Logging: Prometheus, Grafana, ELK Stack, Graylog,
-              Moogsoft, AppDynamics.
-            </p>
-            <p>
-              Security & Compliance: IAM, VPC, VPN, SSL/TLS, WAF, Cloudflare
-              Security Solutions.
-            </p>
-          </div>
-          <div>
-            <h3>Linux & System Administration</h3>
-            <p>
-              Operating Systems: Ubuntu, Debian, CentOS, AlmaLinux, RockyLinux.
-            </p>
-            <p>Web Servers: Nginx, Apache, HAProxy, OpenLiteSpeed.</p>
-            <p>
-              Email Servers & Security: Postfix, Exim, iRedMail, Dovecot,
-              OpenDKIM, DMARC, SPF, CSF.
-            </p>
-            <p>Database Management: MySQL, PostgreSQL, MongoDB, AWS RDS.</p>
-          </div>
-          <div>
-            <h3>Project & Team Management</h3>
-            <p>
-              Agile methodologies, Jira, Trello, Asana, Slack, Google Workspace.
-            </p>
-          </div>
-        </div>
-      </div>
+    <section>
+      <h2>Let's Work Together Directly (No Upwork Fees)</h2>
+      <form action="/" method="POST">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea
+          name="message"
+          rows="7"
+          placeholder="Describe your project or infrastructure needs…"
+          required
+        ></textarea>
+        <button type="submit">Send Message - Let's Get Started</button>
+      </form>
 
-      <div class="section certifications">
-        <h2>Certifications</h2>
-        <ul>
-          <li>AWS Certified Solutions Architect (In Progress)</li>
-          <li>Kubernetes Certified Administrator (In Progress)</li>
-          <li>Docker Certified</li>
-          <li>AWS Certified DevOps Engineer (In Progress)</li>
-        </ul>
-      </div>
+      <p style="text-align: center; margin-top: 45px; font-size: 1.15rem">
+        Email: <strong>rakib4kbd@gmail.com</strong><br />
+        WhatsApp / Telegram: <strong>+880-174-877-1534</strong><br />
+        Time zone: GMT+6 (Bangladesh) • Available immediately
+      </p>
+    </section>
 
-      <div class="section education">
-        <h2>Education</h2>
-        <p>
-          Higher Secondary Certificate (HSC), Rajbari Government College | Year
-          of Completion (Please Specify)
-        </p>
-      </div>
-
-      <div class="section projects">
-        <h2>Projects & Achievements</h2>
-        <ul>
-          <li>
-            Architected scalable cloud solutions for startups and enterprises,
-            ensuring high availability and security.
-          </li>
-          <li>
-            Designed and deployed enterprise-grade email servers with Postfix,
-            Exim, OpenDKIM, and Dovecot, achieving 99.99% uptime.
-          </li>
-          <li>
-            Automated infrastructure provisioning and deployments using
-            Terraform & Ansible, improving operational efficiency by 50%.
-          </li>
-          <li>
-            Migrated high-traffic applications to AWS & Cloudflare, reducing
-            latency and improving performance.
-          </li>
-          <li>
-            Led a team in building a startup infrastructure using Cloudflare,
-            AWS, and other serverless platforms.
-          </li>
-        </ul>
-      </div>
-
-      <div class="section references">
-        <h2>References</h2>
-        <p>Available upon request.</p>
-      </div>
-    </div>
+    <footer>
+      <p>© 2025 Rakib Khan - Senior DevOps Engineer | Direct contracts only</p>
+    </footer>
   </body>
 </html>
