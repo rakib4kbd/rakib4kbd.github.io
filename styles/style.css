@@ -32,6 +32,18 @@ body {
   font-size: 16px;
 }
 
+.btn-primary div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary:hover {
+  background-color: #1a964d;
+  cursor: pointer;
+}
+
 .btn-secondary {
   padding: 16px;
   background-color: transparent;
@@ -39,6 +51,19 @@ body {
   border: 1px solid white;
   border-radius: 4px;
   font-size: 16px;
+}
+
+.btn-secondary div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
 }
 
 .banner-section {
@@ -175,6 +200,12 @@ body {
   gap: 16px;
   background-color: #ffffff;
   border-radius: 8px;
+  max-width: 322px;
+  height: 300px;
+}
+
+.note-card:hover {
+  background-color: rgba(255, 0, 0, 0.05);
 }
 
 .note-card figure {
@@ -238,7 +269,7 @@ body {
 .solution-checklist {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 16px;
 }
 
 .solution-checklist div {
@@ -252,6 +283,11 @@ body {
   gap: 40px;
 }
 
+.think-more-container {
+  background-color: white;
+  padding-bottom: 120px;
+}
+
 .think-more-section {
   background-color: #f7f6f2;
   margin: 0px 120px;
@@ -261,6 +297,7 @@ body {
   align-items: center;
   padding: 80px 40px;
   gap: 24px;
+  border-radius: 12px;
 }
 
 .think-more-heading {
@@ -299,6 +336,18 @@ body {
   color: #627382;
 }
 
+.btn-think-more {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btn-think-more div p {
+  color: white;
+}
+
+.btn-think-more:hover {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
 .footer-section {
   padding: 120px;
   padding-bottom: 0px;
@@ -317,6 +366,8 @@ body {
 .footer-social {
   display: flex;
   flex-direction: column;
+  width: 220px;
+  align-items: start;
 }
 
 .footer-social p {
@@ -336,4 +387,17 @@ body {
 
 .footer-copyright hr {
   border: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-links {
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+}
+
+.header-nav-items li a {
+  text-decoration: none;
+  color: #001931;
 }
